@@ -1,4 +1,4 @@
-export default interface IJournal {
+export default interface IEntry {
     events: string[],
     squirrel: boolean
 }

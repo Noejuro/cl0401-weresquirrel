@@ -6,6 +6,7 @@ for (let event of journalEvents(JOURNAL)) {
         console.log(event + ":", correlation);
     }
 }
+console.log(journalEvents(JOURNAL));
 let testJournal = JSON.parse(JSON.stringify(JOURNAL));
 for (let entry of testJournal) {
     if (entry.events.includes("peanuts") &&
@@ -13,4 +14,4 @@ for (let entry of testJournal) {
         entry.events.push("peanut teeth");
     }
 }
-console.log(phi(tableFor("peanut teeth", testJournal)));
+console.log("Relation when eating peanuts and not brushing teeth: ", phi(tableFor("peanut teeth", testJournal)));
